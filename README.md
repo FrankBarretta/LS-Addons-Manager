@@ -88,3 +88,8 @@ software.
 
 All trademarks, product names, and company names are the property
 of their respective owners and are used for identification purposes only.
+
+
+Each add-on is distributed as a separate project and may have
+its own license and disclaimer.
+
