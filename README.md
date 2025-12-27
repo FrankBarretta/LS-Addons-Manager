@@ -10,6 +10,12 @@
 *   **DirectX 11 Hooking:** Hooks `Present` and `ResizeBuffers` to inject custom rendering and logic.
 *   **API for Developers:** Simple C-interface (`addon_api.hpp`) for creating custom addons.
 
+---
+
+<img width="2139" height="698" alt="Screenshot 2025-12-27 225448" src="https://github.com/user-attachments/assets/1fbfdd52-b40b-4f45-8eea-149d46325742" />
+
+---
+
 ## Prerequisites
 
 *   **Operating System:** Windows 10/11 (64-bit)
