@@ -73,3 +73,12 @@ This project is based on reverse engineering and independent analysis
 of the software behavior. No proprietary source code, assets, or
 confidential materials from Lossless Scaling are included.
 
+
+Use at your own risk.
+
+Using this project may violate the terms of service or license
+agreement of Lossless Scaling.
+
+The author assumes no responsibility for any damage, data loss,
+account bans, or legal consequences resulting from the use of this
+software.
