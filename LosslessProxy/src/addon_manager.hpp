@@ -1,5 +1,5 @@
 #pragma once
-#include "addon_api.hpp"
+#include "include/addon_api.hpp"
 #include <string>
 #include <vector>
 #include <windows.h>
