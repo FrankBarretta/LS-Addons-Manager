@@ -62,7 +62,7 @@ Refer to `src/addon_api.hpp` for the interface definition. An addon is a DLL tha
 
 
 
-⚠️ Disclaimer
+## ⚠️ Disclaimer
 
 This project is an unofficial add-on manager for Lossless Scaling.
 
