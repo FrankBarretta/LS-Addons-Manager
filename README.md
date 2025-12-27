@@ -60,6 +60,16 @@
 
 Refer to `src/addon_api.hpp` for the interface definition. An addon is a DLL that exports specific functions like `AddonInitialize`, `AddonRenderSettings`, etc.
 
-## Disclaimer
 
-This project is an unofficial modification and is not affiliated with the creators of Lossless Scaling. Use at your own risk.
+
+⚠️ Disclaimer
+
+This project is an unofficial add-on manager for Lossless Scaling.
+
+It is NOT affiliated with, endorsed by, or supported by
+Lossless Scaling Developers in any way.
+
+This project is based on reverse engineering and independent analysis
+of the software behavior. No proprietary source code, assets, or
+confidential materials from Lossless Scaling are included.
+
