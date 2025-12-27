@@ -82,3 +82,9 @@ agreement of Lossless Scaling.
 The author assumes no responsibility for any damage, data loss,
 account bans, or legal consequences resulting from the use of this
 software.
+
+
+## Legal Notice / Trademarks
+
+All trademarks, product names, and company names are the property
+of their respective owners and are used for identification purposes only.
