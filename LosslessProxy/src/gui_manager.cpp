@@ -229,46 +229,9 @@ DWORD WINAPI GuiManager::GuiThread(LPVOID lpParam) {
                        ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoCollapse |
                        ImGuiWindowFlags_NoBringToFrontOnFocus);
 
-      // Left Sidebar
-      ImGui::BeginChild("Sidebar", ImVec2(200, 0), true);
-      ImGui::Dummy(ImVec2(0, 10));
-      ImGui::TextDisabled("   PROFILI DI GIOCO");
-      ImGui::Dummy(ImVec2(0, 5));
-
-      // Highlight "Predefinito" to look like selected
-      ImGui::PushStyleColor(ImGuiCol_Header,
-                            ImVec4(0.20f, 0.18f, 0.18f, 1.00f));
-      if (ImGui::Selectable("   Predefinito", true)) {
-      }
-      ImGui::PopStyleColor();
-
-      ImGui::Dummy(ImVec2(0, 20));
-      ImGui::TextDisabled("   ADDONS");
-      ImGui::Dummy(ImVec2(0, 5));
-      if (ImGui::Selectable("   Manager", false)) {
-      }
-
-      ImGui::Dummy(ImVec2(0, 20));
-      ImGui::Separator();
-      ImGui::Dummy(ImVec2(0, 10));
-      if (ImGui::Button("   +   ", ImVec2(40, 30))) {
-      }
-      ImGui::SameLine();
-      if (ImGui::Button("   E   ", ImVec2(40, 30))) {
-      } // Edit icon placeholder
-      ImGui::SameLine();
-      if (ImGui::Button("   D   ", ImVec2(40, 30))) {
-      } // Delete icon placeholder
-
-      ImGui::EndChild();
-
-      ImGui::SameLine();
-
       // Main Content Area
       ImGui::BeginGroup();
       ImGui::Dummy(ImVec2(0, 10));
-      ImGui::Text("   Profilo: \"Predefinito\"");
-      ImGui::Dummy(ImVec2(0, 20));
 
       // Addons Panel
       ImGui::BeginChild("ContentScroll", ImVec2(0, 0), false);
@@ -321,7 +284,7 @@ DWORD WINAPI GuiManager::GuiThread(LPVOID lpParam) {
       ImGui::Dummy(ImVec2(0, 10));
 
       // Panel 3: Options & Actions
-      ImGui::BeginChild("OptionsPanel", ImVec2(0, 150), true);
+      ImGui::BeginChild("OptionsPanel", ImVec2(0, 80), true);
       ImGui::Text("Opzioni & Debug");
       ImGui::Separator();
       ImGui::Dummy(ImVec2(0, 10));
