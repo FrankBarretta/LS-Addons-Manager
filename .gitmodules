@@ -1,3 +1,6 @@
 [submodule "addons/LS_Windowed"]
 	path = addons/LS_Windowed
 	url = https://github.com/FrankBarretta/LS-Addon-Windowed-Mode.git
+[submodule "addons/LS_Reshade"]
+	path = addons/LS_Reshade
+	url = https://github.com/FrankBarretta/LS-Addon-ReShade.git
