@@ -45,10 +45,6 @@ public:
   // Lifecycle
   void InitializeAddons(void *imGuiContext);
 
-  // Debug visualization options
-  bool GetShowFpsCounter() const;
-  void SetShowFpsCounter(bool show);
-
 private:
   void LoadAddon(AddonInfo &addon);
   void UnloadAddon(AddonInfo &addon);
@@ -57,6 +53,4 @@ private:
 
   std::vector<AddonInfo> addons;
   std::wstring configFilePath;
-  bool showFpsCounter = false;
-  bool showCustomShaderBorder = false;
 };

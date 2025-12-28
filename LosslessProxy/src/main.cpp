@@ -31,14 +31,6 @@
 
 AddonManager *g_addonManager = nullptr;
 
-extern "C" {
-__declspec(dllexport) int GetShowFpsCounterProxy() {
-  if (!g_addonManager)
-    return 0;
-  return g_addonManager->GetShowFpsCounter() ? 1 : 0;
-}
-}
-
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call,
                       LPVOID lpReserved) {
   switch (ul_reason_for_call) {

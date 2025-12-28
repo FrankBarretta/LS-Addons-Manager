@@ -1,6 +1,5 @@
 #include "shader_hook.hpp"
 #include "addon_manager.hpp"
-#include "dx11_hook.hpp"
 #include "iat_patcher.hpp"
 #include <cstdint>
 #include <cstring>
@@ -84,12 +83,10 @@ inline DWORD GetCustomHandleId(HRSRC handle) {
 void Initialize(AddonManager *addonManager) {
   g_addonManager = addonManager;
   InitializeCriticalSection(&g_cacheLock);
-  DX11Hook::Initialize();
   LogToFile(L"[ShaderHook] Initialized");
 }
 
 void Shutdown() {
-  DX11Hook::Shutdown();
   EnterCriticalSection(&g_cacheLock);
   g_shaderCache.clear();
   LeaveCriticalSection(&g_cacheLock);

@@ -9,8 +9,6 @@ struct ImGuiContext;
 enum AddonCaps : uint32_t {
   ADDON_CAP_NONE = 0,
   ADDON_CAP_HAS_SETTINGS = 1 << 0, // Provides a settings UI via RenderSettings
-  ADDON_CAP_UPSCALER_PROVIDER = 1 << 1, // Provides upscalers (future use)
-  ADDON_CAP_FRAMEGEN_PROVIDER = 1 << 2, // Provides framegen (future use)
   ADDON_CAP_PATCH_LS1_LOGIC = 1
                               << 3 // Request host to patch LS1 JMP instructions
 };

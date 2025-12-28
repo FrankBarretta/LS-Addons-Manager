@@ -19,7 +19,6 @@ add_library(Lossless SHARED
     src/addon_manager.cpp
     src/gui_manager.cpp
     src/shader_hook.cpp
-    src/dx11_hook.cpp
     ${imgui_SOURCE_DIR}/imgui.cpp
     ${imgui_SOURCE_DIR}/imgui_draw.cpp
     ${imgui_SOURCE_DIR}/imgui_tables.cpp

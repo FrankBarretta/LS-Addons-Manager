@@ -73,17 +73,6 @@ void AddonManager::LoadConfig() {
                                        configFilePath.c_str());
     addon.enabled = (status != 0);
   }
-
-  // Load global debug visualization options
-  showFpsCounter = (GetPrivateProfileIntW(L"Debug", L"ShowFpsCounter", 0,
-                                          configFilePath.c_str()) != 0);
-
-  // Note: ShowCustomShaderBorder was specific to CustomShaders, but we can keep
-  // it as a global debug flag if desired. For now, I'll keep the variable but
-  // it might not do anything unless passed to addons.
-  showCustomShaderBorder =
-      (GetPrivateProfileIntW(L"Debug", L"ShowCustomShaderBorder", 0,
-                             configFilePath.c_str()) != 0);
 }
 
 void AddonManager::SaveConfig() {
@@ -92,14 +81,6 @@ void AddonManager::SaveConfig() {
                                addon.enabled ? L"1" : L"0",
                                configFilePath.c_str());
   }
-
-  // Save debug visualization options
-  WritePrivateProfileStringW(L"Debug", L"ShowFpsCounter",
-                             showFpsCounter ? L"1" : L"0",
-                             configFilePath.c_str());
-  WritePrivateProfileStringW(L"Debug", L"ShowCustomShaderBorder",
-                             showCustomShaderBorder ? L"1" : L"0",
-                             configFilePath.c_str());
 }
 
 void AddonManager::LoadAddons() {
@@ -252,12 +233,4 @@ void AddonManager::RenderAddonSettings(int index) {
 void AddonManager::Log(const wchar_t *message) {
   OutputDebugStringW(message);
   OutputDebugStringW(L"\n");
-}
-
-// Debug visualization options
-bool AddonManager::GetShowFpsCounter() const { return showFpsCounter; }
-
-void AddonManager::SetShowFpsCounter(bool show) {
-  showFpsCounter = show;
-  SaveConfig();
 }
